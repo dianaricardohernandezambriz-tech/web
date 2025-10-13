@@ -897,7 +897,7 @@ form label {
   text-align: center;
 }
 #fh5co-counter .counter {
-  font-size: 50px;
+  font-size: 20px;
   margin-bottom: 10px;
   color: #fff;
   font-weight: 100;
@@ -905,6 +905,7 @@ form label {
 }
 #fh5co-counter .counter-label {
   margin-bottom: 0;
+  font-size: 20px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: .1em;
