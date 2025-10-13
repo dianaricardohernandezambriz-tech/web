@@ -942,7 +942,7 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  background: rgba(0 157,113,0.8);
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1839,5 +1839,11 @@ form label {
 .js .animate-box {
   opacity: 0;
 }
+
+.contenedor-tabla table {
+      display: table-cell;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
 
 /*# sourceMappingURL=style.css.map */
