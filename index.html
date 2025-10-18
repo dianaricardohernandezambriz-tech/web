@@ -121,6 +121,10 @@
 				console.log("pases");
 				const urlParams = new URLSearchParams(window.location.search);
 				const pases = urlParams.get("type");
+				if (pases!=null){
+					pases=pases.toLowerCase();
+
+				}
 				console.log(pases);
 				if (pases == 'alfa') {
 					location.href = "https://forms.gle/ReLN4X6kFizHRoxJ6";
