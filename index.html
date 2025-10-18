@@ -120,7 +120,7 @@
 			function getPases() {
 				console.log("pases");
 				const urlParams = new URLSearchParams(window.location.search);
-				const pases = urlParams.get("type");
+				var pases = urlParams.get("type");
 				if (pases!=null){
 					pases=pases.toLowerCase();
 
