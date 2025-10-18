@@ -120,18 +120,15 @@
 			function getPases() {
 				console.log("pases");
 				const urlParams = new URLSearchParams(window.location.search);
-				const pases = urlParams.get("pases");
+				const pases = urlParams.get("type");
 				console.log(pases);
-				if (pases == '1') {
+				if (pases == 'alfa') {
 					location.href = "https://forms.gle/ReLN4X6kFizHRoxJ6";
 				}
-				else if (pases == '2') {
-					location.href = "https://forms.gle/D1i3yQuH8yGCcXvg6";
-				}
-				else if (pases == '3') {
+				else if (pases == 'gamma') {
 					location.href = "https://forms.gle/VMH9waj9rPyxtebp6";
 				}
-				else if (pases == '4') {
+				else if (pases == 'delta') {
 					location.href = "https://forms.gle/8ELdeK4mCPTrzsHb7";
 				}
 				else {
@@ -576,7 +573,7 @@
 							</div>
 							<p>Favor de evitar vestido blanco o similares y vestidos color verde esmeralda.</p>
 						</div>
-						<audio id="audio" controls autoplay loop>
+						<audio id="audio" controls autoplay>
 							<source src="music/music.ogg" type="audio/ogg">
 							Your browser does not support the audio element.
 						</audio>
