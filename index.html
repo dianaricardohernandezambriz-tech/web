@@ -108,7 +108,7 @@
 								<h1>Diana &amp; Ricardo</h1>
 								<h2>¡Nos casamos!</h2>
 								<div class="simply-countdown simply-countdown-one"></div>
-								<p><a id="start" href="#fh5co-couple" class="btn btn-default btn-sm">Empezamos</a></p>
+								<p><a id="start" href="#fh5co-couple" class="btn btn-default btn-sm">Empecemos</a></p>
 							</div>
 						</div>
 					</div>
@@ -116,6 +116,28 @@
 			</div>
 		</header>
 		<script>
+
+			function getPases() {
+				console.log("pases");
+				const urlParams = new URLSearchParams(window.location.search);
+				const pases = urlParams.get("pases");
+				console.log(pases);
+				if (datos == '1') {
+					location.href = "https://forms.gle/ReLN4X6kFizHRoxJ6";
+				}
+				else if (datos == '2') {
+					location.href = "https://forms.gle/D1i3yQuH8yGCcXvg6";
+				}
+				else if (datos == '3') {
+					location.href = "https://forms.gle/VMH9waj9rPyxtebp6";
+				}
+				else if (datos == '4') {
+					location.href = "https://forms.gle/8ELdeK4mCPTrzsHb7";
+				}
+				else {
+					location.href = "https://forms.gle/D1i3yQuH8yGCcXvg6";
+				}
+			}
 
 
 
@@ -145,7 +167,8 @@
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<h2>Hola!</h2>
 						<h3>Noviembre 30, 2025 Morelia, Mich</h3>
-						<p>Con el amor que nos une, la bendición de Dios y el apoyo de nuestros padres, te invitamos a
+						<p>Con el amor que nos une, la bendición de Dios y el apoyo de nuestros padres y padrinos, te
+							invitamos a
 							celebrar nuestra boda.</p>
 					</div>
 				</div>
@@ -244,7 +267,8 @@
 								</div>
 							</li>
 							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge" style="background-image:url(images/arco-de-boda.png);"></div>
+								<div class="timeline-badge" style="background-image:url(images/arco-de-boda.png);">
+								</div>
 								<div class="timeline-panel">
 									<div class="timeline-body">
 										<p>07:45 PM. Recepción.</p>
@@ -252,7 +276,8 @@
 								</div>
 							</li>
 							<li class="animate-box">
-								<div class="timeline-badge" style="background-image:url(images/recien-casados.png);"></div>
+								<div class="timeline-badge" style="background-image:url(images/recien-casados.png);">
+								</div>
 								<div class="timeline-panel">
 									<div class="timeline-body">
 										<p>08:30 PM. Entrada novios.</p>
@@ -268,7 +293,8 @@
 								</div>
 							</li>
 							<li class="animate-box">
-								<div class="timeline-badge" style="background-image:url(images/pastel-de-boda.png);"></div>
+								<div class="timeline-badge" style="background-image:url(images/pastel-de-boda.png);">
+								</div>
 								<div class="timeline-panel">
 									<div class="timeline-body">
 										<p>09:00 PM. Pastel.</p>
@@ -276,7 +302,8 @@
 								</div>
 							</li>
 							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge" style="background-image:url(images/cena-romantica.png);"></div>
+								<div class="timeline-badge" style="background-image:url(images/cena-romantica.png);">
+								</div>
 								<div class="timeline-panel">
 									<div class="timeline-body">
 										<p>09:10 PM. Banquete.</p>
@@ -292,7 +319,8 @@
 								</div>
 							</li>
 							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge" style="background-image:url(images/bola-de-espejos.png);"></div>
+								<div class="timeline-badge" style="background-image:url(images/bola-de-espejos.png);">
+								</div>
 								<div class="timeline-panel">
 									<div class="timeline-body">
 										<p>10:30 PM. A bailar!!!</p>
@@ -300,7 +328,8 @@
 								</div>
 							</li>
 							<li class="animate-box">
-								<div class="timeline-badge" style="background-image:url(images/campanas-de-boda.png);"></div>
+								<div class="timeline-badge" style="background-image:url(images/campanas-de-boda.png);">
+								</div>
 								<div class="timeline-panel">
 									<div class="timeline-body">
 										<p>01:45 AM. Cierre Evento</p>
@@ -332,7 +361,7 @@
 										<div class="event-col">
 											<i class="icon-clock"></i>
 											<span>5:00 PM</span>
-											<span>7:00 PM</span>
+											<span>6:00 PM</span>
 										</div>
 										<div class="event-col">
 											<i class="icon-calendar"></i>
@@ -594,7 +623,7 @@
 						</div>
 					</form>
 
-					<p style="text-align: center;"><a href="https://forms.gle/NcTP225KvAQG4P1p8"
+					<p style="text-align: center;"><a href="#" onclick="getPases()"
 							class="btn btn-default btn-sm">Confirmar asistencia</a></p>
 				</div>
 			</div>
