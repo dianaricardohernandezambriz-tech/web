@@ -44,6 +44,7 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/audio.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -102,16 +103,39 @@
 							<h1>Diana &amp; Ricardo</h1>
 							<h2>¡Nos casamos!</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="https://calendar.app.google/BwLmqj5b5k9R91H87" class="btn btn-default btn-sm">Aparta la fecha</a></p>
+							<p><a id="start" href="#fh5co-couple" class="btn btn-default btn-sm">Empezamos</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+	<script>
+
+	
+
+	
+
+
+// For element-level scrolling (assuming an element with id 'myElement')
+const myElement = document.getElementById('start');
+if (myElement) {
+  myElement.addEventListener('click', function() {
+	const audio = document.querySelector('audio');
+	audio.play().then(() => {
+		  // Reproducción automática iniciada
+    }).catch(error => {
+		// La reproducción automática falló, probablemente porque el usuario no ha interactuado
+    });
+    console.log('Element clicked!');
+  });
+}
+
+</script>
 
 	<div id="fh5co-couple">
 		<div class="container">
+			
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Hola!</h2>
@@ -430,12 +454,18 @@ Cada día será un nuevo capítulo de nuestra historia, escrito con amor, fe y f
 	<div id="fh5co-services" class="fh5co-section-gray">
 		<div class="container">
 			
+			
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Código de vestimenta:</h2>
 					<p>Formal</p>
 				</div>
 			</div>
+
+			<audio id="audio" controls autoplay loop>
+					<source src="music/music.ogg" type="audio/ogg">
+				Your browser does not support the audio element.
+			</audio>
 
 			<div class="row">
 				<div class="col-md-6">
