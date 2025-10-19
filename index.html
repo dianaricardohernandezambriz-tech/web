@@ -76,7 +76,7 @@
 							<li class="active"><a href="index.html">Inicio</a></li>
 							<li><a href="#" onclick="getPases()">Confirmar asistencia</a></li>
 							<li class="has-dropdown">
-								<a href="gallery.html">Gallería</a>
+								<a href="gallery.html">Galería</a>
 								<ul class="dropdown">
 									<li><a href="#">Propuesta</a></li>
 									<li><a href="#">Save the date</a></li>
@@ -119,6 +119,11 @@
 				const urlParams = new URLSearchParams(window.location.search);
 				var pases = urlParams.get("type");
 				var nombre = urlParams.get("guest");
+				console.log(nombre);
+				if (nombre == null || nombre == "") {
+					nombre=="NO IDENTIFICADO";
+
+				}
 				if (pases != null) {
 					pases = pases.toLowerCase();
 
