@@ -174,15 +174,44 @@
 					</div>
 				</div>
 				<div class="row row-bottom-padded-md">
-					<div class="upload__box">
-						<div class="upload__btn-box">
-							<label class="upload__btn">
-								<p>Upload images</p>
-								<input type="file" multiple="" data-max_length="20" class="upload__inputfile">
-							</label>
-						</div>
-						<div class="upload__img-wrap"></div>
-					</div>
+				<!---START--->
+<div class="container">
+  <h3 class="page-header">Upload Photos Page</h3>
+
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="photo" class="col-sm-2 control-label">Upload</label>
+      <div class="col-sm-10">
+        <input type="file" class="form-control" name="photo" id="photo" accept=".png, .jpg, .jpeg" onchange="readFile(this);" multiple>
+      </div>
+    </div>
+  </form>
+  
+  <div id="status"></div>
+  <div id="photos" class="row"></div>
+</div>
+
+<script>
+	function readFile(input) {
+  	$("#status").html('Processing...');
+    counter = input.files.length;
+		for(x = 0; x<counter; x++){
+			if (input.files && input.files[x]) {
+
+				var reader = new FileReader();
+
+				reader.onload = function (e) {
+        	$("#photos").append('<div class="col-md-3 col-sm-3 col-xs-3"><img src="'+e.target.result+'" class="img-thumbnail"></div>');
+				};
+
+				reader.readAsDataURL(input.files[x]);
+			}
+    }
+    if(counter == x){$("#status").html('');}
+  }
+</script>
+
+				<!--END-->
 					<div class="col-md-12" hidden>
 						<ul id="fh5co-gallery-list">
 
