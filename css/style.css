@@ -1846,9 +1846,7 @@ form label {
 
 #gallery div {
   height: 200px;
-  width: fit-content;
   margin: 110px;
-  justify-content: center;
   position: relative;
 }
 
@@ -1913,5 +1911,81 @@ form label {
 #gallery img:last-child:nth-child(5) {
   offset-distance: 100%;
 }
+
+
+@media screen and (max-width: 768px) {
+  #gallery img {
+      height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+  #gallery img {
+      height: 150px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+  #gallery div {
+      height: 150px;
+      width: 400px;
+      margin: 100px,30px;
+      position: initial;
+    }
+
+}
+/* 3 images */
+@media screen and (max-width: 768px) {
+  #gallery img:nth-last-child(3):first-child {
+  offset-distance: 17%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  #gallery img:nth-last-child(2):nth-child(2) {
+  offset-distance: 42%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  #gallery img:last-child:nth-child(3) {
+  offset-distance: 71%;
+}
+
+}
+/* 4 images */
+@media screen and (max-width: 768px) {
+  #gallery img:nth-last-child(4):first-child {
+  offset-distance: 15%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  #gallery img:nth-last-child(3):nth-child(2) {
+  offset-distance: 35%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  #gallery img:nth-last-child(2):nth-child(3) {
+  offset-distance: 55%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+#gallery img:last-child:nth-child(4) {
+  offset-distance: 75%;
+}
+
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */
