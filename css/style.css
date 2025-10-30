@@ -1847,7 +1847,7 @@ form label {
 #gallery div {
   height: 200px;
   width: fit-content;
-  margin: 100px 100px;
+  margin: 110px;
   justify-content: center;
   position: relative;
 }
