@@ -1844,10 +1844,11 @@ form label {
     }
 
 
-#gallery p {
-  height: 500px;
-  width: 200px;
-  margin: 50px auto;
+#gallery div {
+  height: 200px;
+  width: fit-content;
+  margin: 100px 100px;
+  justify-content: center;
   position: relative;
 }
 
